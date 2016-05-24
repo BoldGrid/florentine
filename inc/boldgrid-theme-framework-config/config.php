@@ -4,6 +4,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	 * General Configs
 	 */
 	$boldgrid_framework_configs['theme_name'] = 'boldgrid-florentine'; // Text domain
+	$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
 	$boldgrid_framework_configs['temp']['attribution_links'] = true;
 
@@ -94,17 +95,36 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['colors']['light_text'] = '#ffffff';
 	$boldgrid_framework_configs['customizer-options']['colors']['dark_text'] = '#333333';
 
-	// Fonts & Icons
-	$boldgrid_framework_configs['font']['types'] = array ( 'Fredericka+the+Great:400|Raleway:400|Oswald:400|Open+Sans:400,600,700' );
-	$boldgrid_framework_configs['social-icons']['size'] = '2x';
-	$boldgrid_framework_configs['social-icons']['type'] = 'icon-circle';
-	
+	// Typography Headings
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Fredericka the Great';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 20;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'uppercase';
+
+	// Typography Alternate Headings
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Raleway';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 20;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'uppercase';
+
+	// Typography Navigation
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_family'] = 'Raleway';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_size'] = 13;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_text_transform'] = 'uppercase';
+
+	// Typography Body
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Open Sans';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 14;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 150;
+
 	// Menu Locations
 	$boldgrid_framework_configs['menu']['locations']['secondary'] = "Above Header";
 	$boldgrid_framework_configs['menu']['locations']['tertiary'] = "Below Header";
 	$boldgrid_framework_configs['menu']['locations']['social'] = "Footer Right";
 	$boldgrid_framework_configs['menu']['locations']['footer_center'] = "Footer Left";
 	$boldgrid_framework_configs['menu']['footer_menus'][] = "social";
+	
+	// Icons
+	$boldgrid_framework_configs['social-icons']['size'] = '2x';
+	$boldgrid_framework_configs['social-icons']['type'] = 'icon-circle';
 	
 	/**
 	 * Widgets
@@ -114,7 +134,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		<div class="col-sm-8 col-md-6">
 			<div class="call-to-action">
 				<h2>THE GOOD LIFE</h2>
-				<h3>DON'T LEAVE ANYTHING TO CHANCE!</h3>
+				<h3 class="alt-font">DON'T LEAVE ANYTHING TO CHANCE!</h3>
 					<p class="p-button-primary">
 						<a class="button-primary" href="contact-us">CONTACT US</a>
 					</p>
