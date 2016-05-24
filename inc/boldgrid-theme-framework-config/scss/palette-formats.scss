@@ -1,0 +1,188 @@
+/*------------------------------------------------------------------------
+# Variables
+------------------------------------------------------------------------*/
+$rgba_5 : rgba($palette-primary_5, 0.75);
+
+/*------------------------------------------------------------------------
+# Palettes
+------------------------------------------------------------------------*/
+.palette-primary {
+	/*-----------------------------------------------
+	## 1
+	-----------------------------------------------*/
+	.button-primary,
+	.form-submit .submit,
+	.ninja-forms-field.btn,
+	.call-to-action h3,
+	.table-striped > tbody > tr:nth-child(2n+1) {
+		background: $palette-primary_1;	
+		color: $text-contrast-palette-primary_1;
+	}
+	.navbar-default .navbar-nav > .open > a, 
+	.navbar-default .navbar-nav > .open > a:hover, 
+	.navbar-default .navbar-nav > .open > a:focus,
+	.navbar-default .navbar-nav > .current-menu-parent > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	    background-color: $palette-primary_1;
+	    color: $text-contrast-palette-primary_1;
+	}
+	.site-footer,
+	#tertiary-menu {
+		background: $palette-primary_1;
+	}
+	.site-header,
+	.site-footer,
+	.button-primary,
+	.button-secondary,
+	.ninja-forms-field.btn,
+	.site-info, 
+	.site-info a,
+	.site-info a:hover,
+	.site-info a:focus, 
+	.attribution, 
+	.attribution a,
+	.attribution a:hover,
+	.attribution a:focus,
+	.follow-me h2 {
+		color: $text-contrast-palette-primary_1;
+	}
+	.call-to-action h2,
+	.mod-blockquote p,
+	.disabled-footer .site-footer a {
+		color: $palette-primary_1;
+	}
+	hr,
+	.mod-beta {
+		border-bottom: 1px solid $palette-primary_1;
+	}
+	.entry-title,
+	.background-beta h2,
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus {
+		border-bottom: 5px solid $palette-primary_1;
+	}
+	.mod-alpha h2,
+	#menu-primary .current-menu-item > a {
+		border-bottom: 5px solid $palette-primary_1;
+	}
+	.widget-area {
+	    border: 1px solid $palette-primary_1;
+	}
+
+	/*-----------------------------------------------
+	## 2
+	-----------------------------------------------*/
+	.button-primary:hover,
+	.button-primary:focus,
+	.button-secondary:hover,
+	.button-secondary:focus,
+	.ninja-forms-field.btn:hover,
+	.ninja-forms-field.btn:focus {
+		background: $palette-primary_2;
+		color: $text-contrast-palette-primary_2;
+	}
+	.form-submit .submit:hover,
+	.form-submit .submit:focus {
+		background-color: $palette-primary_2;
+	    border-color: $palette-primary_2;
+		color: $text-contrast-palette-primary_2;
+	}
+	#primary-navbar li.menu-social a i:hover,
+	#menu-social li.menu-social a i:hover,
+	#secondary-menu li.menu-social a i:hover,
+	#tertiary-menu li.menu-social a i:hover,
+	#footer-center-menu li.menu-social a i:hover {
+		color: $palette-primary_2;
+	}
+
+	/*-----------------------------------------------
+	## 3
+	-----------------------------------------------*/
+	a,
+	a:hover,
+	a:focus,
+	.link-primary,
+	.link-primary:hover,
+	.link-primary:focus,
+	#primary-navbar li.menu-social a,
+	.menu-social li a i.fa-circle,
+	#secondary-menu li.menu-social a,
+	#tertiary-menu li.menu-social a,
+	#footer-center-menu li.menu-social a {
+		color: $palette-primary_3;
+	}
+	.site-title a,
+	.site-title a:hover,
+	.site-title a:focus {
+		color: #fff;
+	}
+	.fa-inverse {
+		color: $text-contrast-palette-primary_3;
+	}
+
+	/*-----------------------------------------------
+	## 4
+	-----------------------------------------------*/
+	.background-alpha,
+	.button-secondary {
+		background: $palette-primary_4;
+		color: $text-contrast-palette-primary_4;
+	}
+	ul,
+	ol,
+	.link-secondary,
+	.link-secondary:hover,
+	.link-secondary:focus,
+	.widget-title,
+	caption {
+		color: $palette-primary_4;
+	}
+	.mod-blockquote {
+		border-left: 6px solid $palette-primary_4;
+	}
+
+	/*-----------------------------------------------
+	## 5
+	-----------------------------------------------*/
+	.site-content,
+	.background-primary,
+	.background-beta,
+	.disabled-footer .site-footer,
+	#boldgrid-sticky-push,
+	#boldgrid-sticky-filler {
+		background: $rgba_5;
+		color: $text-contrast-palette-primary_5;
+	}
+	h1,
+	h2,
+	.mod-beta h3,
+	.entry-title {
+    	color: $text-contrast-palette-primary_5;
+    }
+    .mod-alpha h2 {
+    	color: #fff;
+	}
+}
+
+/*------------------------------------------------------------------------
+# Tiny MCE
+------------------------------------------------------------------------*/
+.palette-primary.mce-content-body {
+	background: $rgba_5;
+	color: $text-contrast-palette-primary_5;
+}
+
+/*------------------------------------------------------------------------
+# Page Template Home
+------------------------------------------------------------------------*/
+.page-template-page_home .entry-footer {
+	background: $rgba_5;
+}
+.page-template-page_home .background-primary,
+.page-template-page_home .site-content {
+	background: none !important;
+}
