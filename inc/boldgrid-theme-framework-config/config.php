@@ -27,11 +27,10 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
-		'1' => array( '[menu]tertiary' ),
-		'5' => array( '[menu]secondary' ),
-		'8' => array( '[action]boldgrid_site_identity', '[action]boldgrid_primary_navigation' ),
-		'11' => array( '[widget]boldgrid-widget-2' ),
-		'8' => array( '[action]' ),
+		'1' => array( '[menu]secondary', '[widget]boldgrid-widget-1' ),
+		'5' => array( '[action]boldgrid_site_identity' ),
+		'8' => array( '[action]boldgrid_primary_navigation' ),
+		'11' => array( '[widget]boldgrid-widget-2', '[menu]tertiary' ),
 	);
 
 	// Assign Locations for Generic Header.
