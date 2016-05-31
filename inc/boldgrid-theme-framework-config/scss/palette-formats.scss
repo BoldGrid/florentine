@@ -15,15 +15,15 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 	.ninja-forms-field.btn,
 	.call-to-action h3,
 	.table-striped > tbody > tr:nth-child(2n+1) {
-		background: $palette-primary_1;	
+		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-	.navbar-default .navbar-nav > .open > a, 
-	.navbar-default .navbar-nav > .open > a:hover, 
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
 	.navbar-default .navbar-nav > .open > a:focus,
 	.navbar-default .navbar-nav > .current-menu-parent > a,
 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -39,11 +39,11 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 	.button-primary,
 	.button-secondary,
 	.ninja-forms-field.btn,
-	.site-info, 
+	.site-info,
 	.site-info a,
 	.site-info a:hover,
-	.site-info a:focus, 
-	.attribution, 
+	.site-info a:focus,
+	.attribution,
 	.attribution a,
 	.attribution a:hover,
 	.attribution a:focus,
@@ -179,10 +179,10 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 /*------------------------------------------------------------------------
 # Page Template Home
 ------------------------------------------------------------------------*/
-.page-template-page_home .entry-footer {
+.page-template-home .entry-footer {
 	background: $rgba_5;
 }
-.page-template-page_home .background-primary,
-.page-template-page_home .site-content {
+.page-template-home .background-primary,
+.page-template-home .site-content {
 	background: none !important;
 }
