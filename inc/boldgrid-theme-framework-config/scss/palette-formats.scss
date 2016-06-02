@@ -7,6 +7,7 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
+
 	/*-----------------------------------------------
 	## 1
 	-----------------------------------------------*/
@@ -36,6 +37,7 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 	}
 	.site-header,
 	.site-footer,
+	.site-footer h2,
 	.button-primary,
 	.button-secondary,
 	.ninja-forms-field.btn,
@@ -46,11 +48,11 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 	.attribution, 
 	.attribution a,
 	.attribution a:hover,
-	.attribution a:focus,
-	.follow-me h2 {
+	.attribution a:focus {
 		color: $text-contrast-palette-primary_1;
 	}
 	.call-to-action h2,
+	blockquote p,
 	.mod-blockquote p,
 	.disabled-footer .site-footer a {
 		color: $palette-primary_1;
@@ -141,6 +143,7 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 	caption {
 		color: $palette-primary_4;
 	}
+	blockquote,
 	.mod-blockquote {
 		border-left: 6px solid $palette-primary_4;
 	}
@@ -163,8 +166,98 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 	.entry-title {
     	color: $text-contrast-palette-primary_5;
     }
-    .mod-alpha h2 {
-    	color: #fff;
+
+	/*-----------------------------------------------
+	## Light Text
+	-----------------------------------------------*/
+	.site-title a,
+	.site-title a:hover,
+	.site-title a:focus,
+	.site-description,
+	.navbar-default .navbar-nav > li > a,
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
+	#secondary-menu a,
+	#tertiary-menu a,
+	.menu-social li a,
+	#footer-center-menu a,
+	.mod-alpha h2 {
+		color: #fff;
+	}
+	#secondary-menu .current-menu-item a,
+	#tertiary-menu .current-menu-item a,
+	#footer-center-menu .current-menu-item a,
+	#menu-social .current-menu-item a {
+	    color: #fff !important;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus,
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+	.comment-text {
+		background: #fff;	
+	}
+
+	/*-----------------------------------------------
+	## Alpha RGBA
+	-----------------------------------------------*/
+	.mod-alpha {
+		background: rgba(43, 43, 43, 0.9);
+	}
+
+	/*-----------------------------------------------
+	## Et Cetera
+	-----------------------------------------------*/
+	/* 2b2b2b */
+	h1,
+	h2,
+	.entry-title,
+	.mod-beta h3,
+	.mod-beta h4,
+	.page-template-page_home .entry-content h2  {
+		color: #2b2b2b;
+	}
+
+	/* ddd */
+	.navbar-default .navbar-toggle {
+	    border-color: #ddd;
+	}
+
+	/* 222 */
+	.navbar-default .navbar-toggle:hover .icon-bar,
+	.navbar-default .navbar-toggle:focus .icon-bar {
+	    background-color: #222;
+	}
+
+	/* 333 */
+	caption,
+	.woocommerce div.product form.cart .variations label,
+	.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+	.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta {
+	    color: #333;
+	}
+
+	@media (min-width: 768px) {
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+			color: #333;
+		}
+	}
+
+	/* WooCommerce */
+	.woocommerce #respond input#submit, 
+	.woocommerce a.button,
+	.woocommerce button.button, 
+	.woocommerce input.button,
+	.woocommerce p.buttons a.button {
+	    background-color: #a46497;
+	    color: #fff;
+	}
+	.woocommerce p.buttons a.button:hover {
+		background-color: #dad8da;
+	    color: #515151;
 	}
 }
 

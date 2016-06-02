@@ -113,7 +113,19 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Typography Body
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Open Sans';
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 14;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 150;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 200;
+
+	// Typography Relationships
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.call-to-action h2' ]= array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 3.9, 
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-beta h4' ]= array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 0.7, 
+	);
 
 	// Menu Locations
 	$boldgrid_framework_configs['menu']['locations']['secondary'] = "Above Header";
@@ -134,7 +146,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		<div class="col-sm-8 col-md-6">
 			<div class="call-to-action">
 				<h2>THE GOOD LIFE</h2>
-				<h3 class="alt-font">DON'T LEAVE ANYTHING TO CHANCE!</h3>
+				<h3 class="h4 alt-font">DON'T LEAVE ANYTHING TO CHANCE!</h3>
 					<p class="p-button-primary">
 						<a class="button-primary" href="contact-us">CONTACT US</a>
 					</p>
@@ -156,7 +168,6 @@ HTML;
 	// Name Widget Areas
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Above Site Title';
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-2']['name'] = 'Call To Action';
-	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-3']['name'] = 'Footer Left';
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-3']['name'] = 'Footer Left';
 
 	// Configs above will override framework defaults
