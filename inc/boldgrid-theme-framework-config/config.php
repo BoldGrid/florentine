@@ -97,13 +97,13 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Typography Headings
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Fredericka the Great';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 20;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 13;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'uppercase';
 
 	// Typography Alternate Headings
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Raleway';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 20;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'uppercase';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Oswald';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 13;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'none';
 
 	// Typography Navigation
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_family'] = 'Raleway';
@@ -115,16 +115,39 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 14;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 200;
 
+	// Typography Tagline Classes
+	$boldgrid_framework_configs['template']['tagline-classes'] = 'h3 alt-font';
+
 	// Typography Relationships
 	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.call-to-action h2' ]= array(
 		'type' => 'headings',
 		'round' => 'floor',
-		'amount' => 3.9, 
+		'amount' => 6.0, 
 	);
-	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-beta h4' ]= array(
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha h2, .background-beta h2' ]= array(
 		'type' => 'headings',
 		'round' => 'floor',
-		'amount' => 0.7, 
+		'amount' => 3.0, 
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.site-footer h2' ]= array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 2.4, 
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.call-to-action h3, .mod-beta h3' ]= array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.9, 
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.page-template-default h4' ]= array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.4, 
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-beta h4' ]= array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.1, 
 	);
 
 	// Menu Locations
@@ -146,7 +169,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		<div class="col-sm-8 col-md-6">
 			<div class="call-to-action">
 				<h2>THE GOOD LIFE</h2>
-				<h3 class="h4 alt-font">DON'T LEAVE ANYTHING TO CHANCE!</h3>
+				<h3>DON'T LEAVE ANYTHING TO CHANCE!</h3>
 					<p class="p-button-primary">
 						<a class="button-primary" href="contact-us">CONTACT US</a>
 					</p>
