@@ -128,31 +128,66 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 			break;
 	}
 
-	// Text Contrast Colors
+	// Text Contrast Colors.
 	$boldgrid_framework_configs['customizer-options']['colors']['light_text'] = '#ffffff';
 	$boldgrid_framework_configs['customizer-options']['colors']['dark_text'] = '#333333';
 
-	// Typography Headings
+	// Typography Headings.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Fredericka the Great';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 20;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 13;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'uppercase';
 
-	// Typography Alternate Headings
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Raleway';
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 20;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'uppercase';
+	// Typography Alternate Headings.
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Oswald';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 13;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'none';
 
-	// Typography Navigation
+	// Typography Navigation.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_family'] = 'Raleway';
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_size'] = 13;
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_text_transform'] = 'uppercase';
 
-	// Typography Body
+	// Typography Body.
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Open Sans';
 	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 14;
-	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 150;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 200;
 
-	// Menu Locations
+	// Typography Tagline Classes.
+	$boldgrid_framework_configs['template']['tagline-classes'] = 'h3 alt-font';
+
+	// Typography Relationships.
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.call-to-action h2'] = array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 6.0,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-alpha h2, .background-beta h2'] = array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 3.0,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.site-footer h2'] = array(
+		'type' => 'headings',
+		'round' => 'floor',
+		'amount' => 2.4,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.call-to-action h3, .mod-beta h3'] = array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.9,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.page-template-default h4'] = array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.4,
+	);
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.mod-beta h4'] = array(
+		'type' => 'subheadings',
+		'round' => 'floor',
+		'amount' => 1.1,
+	);
+
+	// Menu Locations.
 	$boldgrid_framework_configs['menu']['locations']['secondary'] = "Above Header";
 	$boldgrid_framework_configs['menu']['locations']['tertiary'] = "Below Header";
 	$boldgrid_framework_configs['menu']['locations']['social'] = "Footer Right";
