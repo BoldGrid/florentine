@@ -103,26 +103,26 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		),
 	);
 
-	// Get Subcategory ID from the Database
+	// Get Subcategory ID from the Database.
 	$boldgrid_install_options = get_option( 'boldgrid_install_options', array() );
 	$subcategory_id = null;
-	if ( !empty( $boldgrid_install_options['subcategory_id'] ) ) {
+	if ( ! empty( $boldgrid_install_options['subcategory_id'] ) ) {
 		$subcategory_id = $boldgrid_install_options['subcategory_id'];
 	}
 
-	// Override Options per Subcategory
-	switch ( $subcategory_id ) {
-		case 15: //<-- Fitness
+	// Override Options per Subcategory.
+	switch ( $boldgrid_framework_configs['inspiration']['subcategory_key'] ) {
+		case 'Fitness':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][3]['default'] = true;
 			break;
-		case 18: //<-- Property Management
+		case 'Property Management':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
 			break;
-		case 32: //<-- General
+		case 'General':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
 			break;
 
-		// Default Behavior
+		// Default Behavior.
 		default:
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
 			break;
