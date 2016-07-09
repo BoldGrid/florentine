@@ -27,8 +27,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Main Menu
 	## Other Menus
 	## Social Menus
-# GridBLocks
-	## Positioning
 # Modules
 	## Global
 	## Alpha
@@ -414,23 +412,6 @@ ol {
 	.site-header .menu-social ul {
 		float: right;
 	}
-}
-
-/*------------------------------------------------------------------------
-# GridBlocks
-------------------------------------------------------------------------*/
-
-/*-----------------------------------------------
-## Positioning
------------------------------------------------*/
-.gridblock h1,
-.gridblock h2,
-.gridblock h3,
-.gridblock h4,
-.gridblock h5,
-.gridblock h6,
-.gridblock p {
-	margin: 10px 0;
 }
 
 /*------------------------------------------------------------------------
