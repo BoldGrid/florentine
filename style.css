@@ -19,7 +19,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Positioning
 	## Typography
 	## Titles
-	## Links
 	## Buttons
 	## Et Cetera
 # Header
@@ -218,14 +217,6 @@ h2 i.fa {
 }
 
 /*-----------------------------------------------
-## Links
------------------------------------------------*/
-/* Removes blue box in Chrome */
-*:focus {
-	outline: 0;
-}
-
-/*-----------------------------------------------
 ## Buttons
 -----------------------------------------------*/
 .button-primary,
@@ -235,7 +226,6 @@ h2 i.fa {
 	margin: 5px 0;
 	padding: 15px 20px;
 	transition: all .5s;
-	/* Border Radius */
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
@@ -245,7 +235,6 @@ h2 i.fa {
 	margin: 10px 0;
 	padding: 15px 40px;
 	transition: all .5s;
-	/* Border Radius */
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
