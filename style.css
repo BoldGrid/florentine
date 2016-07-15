@@ -210,9 +210,6 @@ h4 {
 .heading {
 	margin-bottom: 15px;
 }
-.heading h3 {
-	margin-top: 10px;
-}
 h2 i.fa {
 	padding-right: 10px;
 }
@@ -542,7 +539,9 @@ blockquote p,
 	border: none;
 	margin: 20px 0;
 }
-
+.site-footer {
+	padding: 2em 0;
+}
 /* Disabled Footer */
 .disabled-footer .site-footer {
 	height: auto;
