@@ -169,23 +169,17 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 	.mod-alpha h2 {
 		color: #fff;
 	}
-}
-
-/*------------------------------------------------------------------------
-# Tiny MCE
-------------------------------------------------------------------------*/
-.palette-primary.mce-content-body {
-	background: $rgba_5;
-	color: $text-contrast-palette-primary_5;
-}
-
-/*------------------------------------------------------------------------
-# Page Template Home
-------------------------------------------------------------------------*/
-.page-template-page_home .entry-footer {
-	background: $rgba_5;
-}
-.page-template-page_home .background-primary,
-.page-template-page_home .site-content {
-	background: none !important;
+	&.page-template-page_home {
+		.entry-footer {
+			background: $rgba_5;
+		}
+		.background-primary,
+		.site-content {
+			background: none !important;
+		}
+	}
+	&.mce-content-body {
+		background: $rgba_5;
+		color: $text-contrast-palette-primary_5;
+	}
 }
