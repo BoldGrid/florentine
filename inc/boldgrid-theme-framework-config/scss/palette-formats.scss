@@ -27,8 +27,8 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-	    background-color: $palette-primary_1;
-	    color: $text-contrast-palette-primary_1;
+		background-color: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
 	}
 	.site-footer,
 	#tertiary-menu {
@@ -70,7 +70,7 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 		border-bottom: 5px solid $palette-primary_1;
 	}
 	.widget-area {
-	    border: 1px solid $palette-primary_1;
+		border: 1px solid $palette-primary_1;
 	}
 
 	/*-----------------------------------------------
@@ -160,11 +160,14 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 	h1,
 	h2,
 	.mod-beta h3,
-	.entry-title {
-    	color: $text-contrast-palette-primary_5;
-    }
-    .mod-alpha h2 {
-    	color: #fff;
+	.entry-title a {
+		color: $text-contrast-palette-primary_5;
+	}
+	.entry-title a:hover {
+		color: $text-contrast-palette-primary_5;
+	}
+	.mod-alpha h2 {
+		color: #fff;
 	}
 }
 
