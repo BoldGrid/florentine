@@ -239,6 +239,9 @@ h2 i.fa {
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
+#commentform p.form-submit {
+	padding: 0;
+}
 
 /* Positioning */
 .p-button-primary {
