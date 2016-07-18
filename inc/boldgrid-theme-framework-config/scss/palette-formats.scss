@@ -30,9 +30,16 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 		background-color: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
+	.tertiary-menu li a {
+		color: $text-contrast-palette-primary_1;
+	}
 	.site-footer,
 	#tertiary-menu {
 		background: $palette-primary_1;
+	}
+	.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text,
+	.secondary-menu li a {
+		color: white;
 	}
 	.site-header,
 	.site-footer,
