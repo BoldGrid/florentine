@@ -514,7 +514,9 @@ blockquote p,
 .wc-gallery .gallery {
 	overflow: visible;
 }
-
+.wc-gallery {
+	margin: 0 -15px
+}
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
