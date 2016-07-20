@@ -542,12 +542,9 @@ blockquote p,
 #footer-widget-area {
 	margin-top: 30px;
 }
-.follow-me h2 {
-	border: none;
-	margin: 20px 0;
-}
-.site-footer {
-	padding: 2em 0;
+
+.footer-6 {
+	margin-top: 1em;
 }
 /* Disabled Footer */
 .disabled-footer .site-footer {
