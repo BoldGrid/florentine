@@ -39,7 +39,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
 		'6' => array( '[widget]boldgrid-widget-3', '[menu]footer_center', '[action]boldgrid_display_attribution_links' ),
-		'7' => array( '[menu]social' ),
+		'7' => array( '[action]boldgrid_social_followme_text', '[menu]social' ),
 	);
 
 	// Social Menus.
@@ -245,3 +245,12 @@ function filter_logo_controls( $controls ) {
 	return $controls;
 }
 add_filter( 'kirki/fields', 'filter_logo_controls' );
+
+function boldgrid_social_followme_text() { ?>
+	<div class="row">
+		<div class="col-md-12 follow-me text-center">
+			<h2>Follow Me</h2>
+		</div>
+	</div>
+<?php }
+add_action( 'boldgrid_social_followme_text', 'boldgrid_social_followme_text' );
