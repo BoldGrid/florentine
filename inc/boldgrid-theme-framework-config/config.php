@@ -30,10 +30,10 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
-		'1' => array( '[menu]secondary', '[widget]boldgrid-widget-1' ),
+		'1' => array( '[menu]secondary', '[widget]boldgrid-widget-2' ),
 		'5' => array( '[action]boldgrid_site_identity' ),
 		'8' => array( '[action]boldgrid_primary_navigation' ),
-		'11' => array( '[widget]boldgrid-widget-2', '[menu]tertiary' ),
+		'11' => array( '[menu]tertiary' ),
 	);
 
 	// Assign Locations for Generic Header.
@@ -212,8 +212,8 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	</div><!-- .row -->
 HTML;
 
-	// Widget 2
-	$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-2'][] = array (
+	// Widget 1
+	$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-1'][] = array (
 		'title' => 'Call To Action',
 		'text' => $widget_markup['call-to-action'],
 		'type' => 'visual',
@@ -222,8 +222,8 @@ HTML;
 	);
 
 	// Name Widget Areas
-	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Above Site Title';
-	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-2']['name'] = 'Call To Action';
+	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-2']['name'] = 'Above Site Title';
+	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Call To Action';
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-3']['name'] = 'Footer Left';
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-3']['name'] = 'Footer Left';
 
