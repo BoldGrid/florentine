@@ -25,6 +25,9 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Select the footer template to use.
 	$boldgrid_framework_configs['template']['footer'] = 'generic';
 
+	// Add container to call to action widget.
+	$boldgrid_framework_configs['template']['pages']['global']['call-to-action'] = 'container';
+
 	// No container on home page.
 	$boldgrid_framework_configs['template']['pages']['page_home.php']['entry-content'] = '';
 
