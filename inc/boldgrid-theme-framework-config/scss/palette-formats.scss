@@ -2,7 +2,8 @@
 # Variables
 ------------------------------------------------------------------------*/
 $rgba_5 : rgba($palette-primary_5, 0.75);
-
+$added: darken( desaturate( $palette-primary_4, 20% ), 7%);
+$added-contrast: text-contrast( $added );
 /*------------------------------------------------------------------------
 # Palettes
 ------------------------------------------------------------------------*/
@@ -138,7 +139,11 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 	## 4
 	-----------------------------------------------*/
 	.mod-alpha {
-		background: darken( desaturate( $palette-primary_4, 20% ), 7%);
+		background: $added;
+		color: $added-contrast;
+		h2 {
+			color: $added-contrast;
+		}
 	}
 	.background-alpha,
 	.button-secondary {
@@ -179,9 +184,7 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 	.entry-title a:hover {
 		color: $text-contrast-palette-primary_5;
 	}
-	.mod-alpha h2 {
-		color: #fff;
-	}
+
 	&.page-template-page_home {
 		.entry-footer {
 			background: $rgba_5;
