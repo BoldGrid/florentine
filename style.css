@@ -357,6 +357,33 @@ ol {
 .navbar-nav > li > .dropdown-menu {
 	margin-top: -5px;
 }
+.navbar-default .navbar-nav>.active>a:hover {
+	color: #fff;
+}
+/* Nav toggle */
+.navbar-default .navbar-toggle {
+	border-color: #ddd;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+	background-color: #222;
+}
+
+/* sm */
+@media (min-width: 768px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #333;
+		text-align: left;
+	}
+}
 
 /*-----------------------------------------------
 ## Other Menus
