@@ -137,6 +137,9 @@ $rgba_5 : rgba($palette-primary_5, 0.75);
 	/*-----------------------------------------------
 	## 4
 	-----------------------------------------------*/
+	.mod-alpha {
+		background: darken( desaturate( $palette-primary_4, 20% ), 7%);
+	}
 	.background-alpha,
 	.button-secondary {
 		background: $palette-primary_4;
