@@ -468,6 +468,10 @@ blockquote p,
 .table-striped > tbody > tr:nth-child(2n+1) {
 	border: none;
 }
+/* 404 Page */
+.error404 .call-to-action {
+	display: none;
+}
 
 /*------------------------------------------------------------------------
 # Posts
