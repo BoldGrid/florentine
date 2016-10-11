@@ -113,26 +113,56 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	switch ( $boldgrid_framework_configs['inspiration']['subcategory_key'] ) {
 		case 'Consulting':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			$cta_h2 = 'RELIABLE DIRECTION';
+			$cta_h3 = 'OPTIMAL BUSINESS SOLUTIONS';
+			break;
+		case 'Design':
+			$cta_h2 = 'DESIGN REFINED';
+			$cta_h3 = 'YOUR VISION NEVER MATTERED MORE';
 			break;
 		case 'Fashion':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			$cta_h2 = 'STYLISH COMFORT';
+			$cta_h3 = 'INDOOR AND OUTDOOR APPAREL';
 			break;
 		case 'Fitness':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			$cta_h2 = 'WINNING FITNESS';
+			$cta_h3 = 'JOIN A LEAGUE TODAY';
 			break;
 		case 'General':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			$cta_h2 = 'BETTER WRITING';
+			$cta_h3 = 'PROFESSIONAL WRITERS AT YOUR SERVICE';
+			break;
+		case 'Home Repair':
+			$cta_h2 = 'RUSTIC CHARM';
+			$cta_h3 = 'AFFORDABLE PRESERVATION SERVICES';
 			break;
 		case 'Photography':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			$cta_h2 = 'FANTASY CAPTURED';
+			$cta_h3 = 'MAGIC IN EVERY SHOT';
 			break;
 		case 'Property Management':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			$cta_h2 = 'STRESS FREE COMFORT';
+			$cta_h3 = 'WE MANAGE YOUR LUXURY';
+			break;
+		case 'Real Estate':
+			$cta_h2 = 'TOWER ABOVE';
+			$cta_h3 = 'PREMIUM SPACE FOR YOUR PREMIUM BUSINESS';
+			break;
+		case 'Restaurant':
+			$cta_h2 = 'UTOPIA, LAYERED';
+			$cta_h3 = 'YOU OWE IT TO YOUR TASTE BUDS';
 			break;
 
 		// Default Behavior.
 		default:
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
+			$cta_h2 = 'THE GOOD LIFE';
+			$cta_h3 = 'DON\'T LEAVE ANYTHING TO CHANCE';
 			break;
 	}
 
@@ -213,8 +243,8 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		<div class="row">
 		<div class="col-sm-8 col-md-6">
 			<div class="call-to-action">
-				<h2>THE GOOD LIFE</h2>
-				<h3 class="alt-font">DON'T LEAVE ANYTHING TO CHANCE!</h3>
+				<h2>$cta_h2</h2>
+				<h3 class="alt-font">$cta_h3</h3>
 					<p class="p-button-primary">
 						<a class="button-primary" href="contact-us">CONTACT US</a>
 					</p>
