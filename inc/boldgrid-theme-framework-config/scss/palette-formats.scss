@@ -38,8 +38,10 @@ $added-contrast: text-contrast( $added );
 	#tertiary-menu {
 		background: $palette-primary_1;
 	}
-	.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text,
-	.secondary-menu li a {
+	.navbar-default .navbar-nav > li > a,
+	.navbar-default .navbar-text,
+	.secondary-menu li a,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
 		color: white;
 	}
 	.site-header,
@@ -162,6 +164,9 @@ $added-contrast: text-contrast( $added );
 	.mod-blockquote {
 		border-left: 6px solid $palette-primary_4;
 	}
+	.dropdown-menu {
+		background-color: $palette-primary_4;
+	}	
 
 	/*-----------------------------------------------
 	## 5
