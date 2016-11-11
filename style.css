@@ -277,6 +277,12 @@ h2 i.fa {
 hr {
 	border-top: none;
 }
+.site-footer .well,
+.site-header .widget.well.widget_search {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
 
 /* Lists */
 ul,
