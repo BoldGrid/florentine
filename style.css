@@ -245,6 +245,11 @@ h2 i.fa {
 #commentform p.form-submit {
 	padding: 0;
 }
+.pager li > a,
+.pager li > a:hover,
+.pager li > a:focus {
+	border: none;
+}
 
 /* Positioning */
 .p-button-primary {

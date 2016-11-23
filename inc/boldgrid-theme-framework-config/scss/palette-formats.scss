@@ -30,7 +30,8 @@ $added-contrast: text-contrast( $added );
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
 	.sidebar .nav > li > a:hover,
 	.sidebar .nav > li > a:focus,
-	.site-header .well {
+	.site-header .well,
+	.pager li > a {
 		background-color: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
@@ -100,14 +101,16 @@ $added-contrast: text-contrast( $added );
 	.button-secondary:hover,
 	.button-secondary:focus,
 	.ninja-forms-field.btn:hover,
-	.ninja-forms-field.btn:focus {
+	.ninja-forms-field.btn:focus,
+	.pager li > a:hover,
+	.pager li > a:focus {
 		background: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}
 	.form-submit .submit:hover,
 	.form-submit .submit:focus {
 		background-color: $palette-primary_2;
-	    border-color: $palette-primary_2;
+		border-color: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}
 	#primary-navbar li.menu-social a i:hover,
@@ -177,7 +180,8 @@ $added-contrast: text-contrast( $added );
 	.site-footer .widget.well a {
 		color: $palette-primary_4;
 	}
-	.mod-blockquote {
+	.mod-blockquote,
+	blockquote {
 		border-left: 6px solid $palette-primary_4;
 	}
 	.dropdown-menu {
