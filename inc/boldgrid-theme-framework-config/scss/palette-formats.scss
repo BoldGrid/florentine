@@ -148,8 +148,8 @@ $added-contrast: text-contrast( $added );
 	.site-header .well {
 		border: 1px solid $palette-primary_3;
 	}
-	.nav > li > a:hover,
-	.nav > li > a:focus {
+	.well .nav > li > a:hover,
+	.well .nav > li > a:focus {
 		background: $palette-primary_3;
 		color: $text-contrast-palette-primary_3;
 	}
