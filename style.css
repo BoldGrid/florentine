@@ -212,6 +212,9 @@ h4 {
 .hentry {
 	margin: 0 auto;
 }
+.hentry:first-child ~ .hentry {
+	margin-top: 50px;
+}
 .heading {
 	margin-bottom: 15px;
 }
