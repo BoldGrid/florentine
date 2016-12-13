@@ -223,4 +223,13 @@ $added-contrast: text-contrast( $added );
 		background: $rgba_5;
 		color: $text-contrast-palette-primary_5;
 	}
+	.panel-default > .panel-heading,
+	.panel-body,
+	.panel-footer {
+		background: $palette-primary_5;
+		color: $text-contrast-palette-primary_5;
+	}
+	.panel-default {
+		border-color: $palette-primary_5;
+	}
 }
