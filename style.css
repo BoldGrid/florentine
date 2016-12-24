@@ -232,8 +232,6 @@ h2 i.fa {
 	margin: 5px 0;
 	padding: 15px 20px;
 	transition: all .5s;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
 .form-submit .submit {
@@ -241,8 +239,6 @@ h2 i.fa {
 	margin: 10px 0;
 	padding: 15px 40px;
 	transition: all .5s;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
 #commentform p.form-submit {
@@ -337,8 +333,6 @@ ol {
 	background: none;
 	border: none;
 	/* Border Radius */
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
 	border-radius: 0;
 }
 .navbar-default {
