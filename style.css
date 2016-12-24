@@ -55,16 +55,16 @@ body,
 	padding: 50px 0;
 }
 .page-template-page_home .background-primary {
-	background: none !important;
 	padding: 0;
+	background: none !important;
 }
 .site-content {
 	margin: 0;
 	padding: 25px 0 25px;
 }
 .page-template-page_home .site-content {
-	background: none;
 	padding: 25px 0 0;
+	background: none;
 }
 
 /*-----------------------------------------------
@@ -228,18 +228,18 @@ h2 i.fa {
 .button-primary,
 .button-secondary,
 .ninja-forms-field.btn {
-	border: none;
 	margin: 5px 0;
 	padding: 15px 20px;
-	transition: all .5s;
+	border: none;
 	border-radius: 6px;
+	transition: all .5s;
 }
 .form-submit .submit {
-	border: medium none;
 	margin: 10px 0;
 	padding: 15px 40px;
-	transition: all .5s;
+	border: medium none;
 	border-radius: 6px;
+	transition: all .5s;
 }
 #commentform p.form-submit {
 	padding: 0;
@@ -283,8 +283,8 @@ hr {
 }
 .site-footer .well,
 .site-header .widget.well.widget_search {
-	background: transparent;
 	border: none;
+	background: transparent;
 	box-shadow: none;
 }
 
@@ -307,13 +307,13 @@ ol {
 
 /* Call To Action */
 .call-to-action {
-	margin-bottom: 200px;
 	margin-top: 75px;
+	margin-bottom: 200px;
 }
 .call-to-action h2 {
-	border: none;
-	margin: 0 0 0.5em;
+	margin: 0 0 .5em;
 	padding: 0;
+	border: none;
 }
 .call-to-action h3 {
 	padding: 10px;
@@ -330,10 +330,10 @@ ol {
 ## Main Menu
 -----------------------------------------------*/
 .navbar {
-	background: none;
 	border: none;
 	/* Border Radius */
 	border-radius: 0;
+	background: none;
 }
 .navbar-default {
 	margin-bottom: 0;
@@ -365,7 +365,7 @@ ol {
 .navbar-nav > li > .dropdown-menu {
 	margin-top: -5px;
 }
-.navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav > .active > a:hover {
 	color: #fff;
 }
 /* Nav toggle */
@@ -433,8 +433,8 @@ ol {
 	padding: 0 5px;
 }
 #primary-navbar li.menu-social a {
-	border: none;
 	padding: 5px 8px;
+	border: none;
 }
 
 /* md */
@@ -453,8 +453,8 @@ ol {
 -----------------------------------------------*/
 blockquote,
 .mod-blockquote {
-	padding-bottom: 0;
 	padding-top: 0;
+	padding-bottom: 0;
 }
 blockquote p,
 .mod-blockquote p {
@@ -465,8 +465,8 @@ blockquote p,
 ## Alpha
 -----------------------------------------------*/
 .mod-alpha {
-	margin-left: -15px;
 	margin-right: -15px;
+	margin-left: -15px;
 	padding: 60px 25px;
 }
 
@@ -509,8 +509,8 @@ blockquote p,
 }
 /* Search Page */
 .search .jumbotron {
-	text-align: center;
 	background: none;
+	text-align: center;
 }
 .search .button-primary {
 	margin: 0;
@@ -529,8 +529,8 @@ blockquote p,
 	padding-right: 15px;
 }
 .panel-footer {
-	border-top: 1px solid transparent;
 	padding: 25px;
+	border-top: 1px solid transparent;
 }
 .panel-default > .panel-heading {
 	border: none;
@@ -549,29 +549,30 @@ blockquote p,
 ## WP Canvas Gallery
 -----------------------------------------------*/
 .gallery-icon {
-	backface-visibility: hidden;
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 	display: inline-block;
-	margin: -6px 0;
 	overflow: hidden;
-	transform: translateZ(0px);
-	transition-duration: 0.3s;
-	transition-property: transform;
-	vertical-align: middle;
+	margin: -6px 0;
 	width: 100%;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	vertical-align: middle;
+	transition-duration: .3s;
+	transition-property: transform;
+	transform: translateZ(0px);
+
+	backface-visibility: hidden;
 }
 .gallery-icon:hover,
 .gallery-icon:focus,
 .gallery-icon:active {
-	transform: scale(1.1) rotate(4deg);
 	position: relative;
 	z-index: 1;
+	transform: scale(1.1) rotate(4deg);
 }
 .wc-gallery .gallery {
 	overflow: visible;
 }
 .wc-gallery {
-	margin: 0 -15px
+	margin: 0 -15px;
 }
 /*-----------------------------------------------
 ## WooCommerce
@@ -601,8 +602,8 @@ blockquote p,
 }
 /* Disabled Footer */
 .disabled-footer .site-footer {
-	height: auto;
 	padding: 15px 0;
+	height: auto;
 }
 .disabled-footer .content-area {
 	margin-bottom: 0;
