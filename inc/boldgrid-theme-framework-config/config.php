@@ -297,8 +297,7 @@ function boldgrid_social_followme_text() {
 	$nav_menu_locations = get_nav_menu_locations();
 	if( empty( $nav_menu_locations[ 'social' ] ) ) {
 		return;
-	}
-?>
+	} ?>
 	<div class="row">
 		<div class="col-md-12 follow-me text-center">
 			<h2>Follow Me</h2>
