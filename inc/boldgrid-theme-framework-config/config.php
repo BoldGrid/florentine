@@ -287,7 +287,17 @@ function filter_logo_controls( $controls ) {
 }
 add_filter( 'kirki/fields', 'filter_logo_controls' );
 
-function boldgrid_social_followme_text() { ?>
+/**
+ * Display Follow Me text next to social media icons.
+ *
+ * @since 1.15
+ */
+function boldgrid_social_followme_text() {
+	// If we don't have a social media menu, don't show followme text.
+	$nav_menu_locations = get_nav_menu_locations();
+	if( empty( $nav_menu_locations[ 'social' ] ) ) {
+		return;
+	} ?>
 	<div class="row">
 		<div class="col-md-12 follow-me text-center">
 			<h2>Follow Me</h2>
