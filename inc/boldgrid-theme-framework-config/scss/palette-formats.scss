@@ -15,7 +15,8 @@ $added-contrast: text-contrast( $added );
 	.form-submit .submit,
 	.ninja-forms-field.btn,
 	.call-to-action h3,
-	.table-striped > tbody > tr:nth-child(2n+1) {
+	.table-striped > tbody > tr:nth-child(2n+1),
+	.site-footer {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
@@ -35,24 +36,14 @@ $added-contrast: text-contrast( $added );
 		background-color: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-	.tertiary-menu li a,
-	.site-footer .widget.well,
-	.site-footer .widget.well caption,
-	.site-header .widget.well caption {
-		color: $text-contrast-palette-primary_1;
-	}
-	.site-footer,
 	#tertiary-menu {
 		background: $palette-primary_1;
 	}
-	.navbar-default .navbar-nav > li > a,
-	.navbar-default .navbar-text,
-	.secondary-menu li a,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-		color: white;
-	}
+	.tertiary-menu li a,
+	.site-footer .widget.well,
+	.site-footer .widget.well caption,
+	.site-header .widget.well caption	
 	.site-header,
-	.site-footer,
 	.button-primary,
 	.button-secondary,
 	.ninja-forms-field.btn,
@@ -82,9 +73,7 @@ $added-contrast: text-contrast( $added );
 	.entry-title,
 	.background-beta h2,
 	.navbar-default .navbar-nav > li > a:hover,
-	.navbar-default .navbar-nav > li > a:focus {
-		border-bottom: 5px solid $palette-primary_1;
-	}
+	.navbar-default .navbar-nav > li > a:focus,
 	.mod-alpha h2,
 	#menu-primary .current-menu-item > a {
 		border-bottom: 5px solid $palette-primary_1;
@@ -136,11 +125,6 @@ $added-contrast: text-contrast( $added );
 	#tertiary-menu li.menu-social a,
 	#footer-center-menu li.menu-social a {
 		color: $palette-primary_3;
-	}
-	.site-title a,
-	.site-title a:hover,
-	.site-title a:focus {
-		color: #fff;
 	}
 	.fa-inverse {
 		color: $text-contrast-palette-primary_3;
@@ -205,13 +189,10 @@ $added-contrast: text-contrast( $added );
 	h1,
 	h2,
 	.mod-beta h3,
-	.entry-title a {
-		color: $text-contrast-palette-primary_5;
-	}
+	.entry-title a,
 	.entry-title a:hover {
 		color: $text-contrast-palette-primary_5;
 	}
-
 	&.page-template-page_home {
 		.entry-footer {
 			background: $rgba_5;

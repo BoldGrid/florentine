@@ -55,16 +55,16 @@ body,
 	padding: 50px 0;
 }
 .page-template-page_home .background-primary {
-	padding: 0;
 	background: none !important;
+	padding: 0;
 }
 .site-content {
 	margin: 0;
 	padding: 25px 0 25px;
 }
 .page-template-page_home .site-content {
-	padding: 25px 0 0;
 	background: none;
+	padding: 25px 0 0;
 }
 
 /*-----------------------------------------------
@@ -99,7 +99,6 @@ a,
 .button-secondary:focus,
 .ninja-forms-field.btn:hover,
 .ninja-forms-field.btn:focus,
-.woocommerce p.buttons a.button:hover,
 .entry-title a:hover,
 .entry-title a:focus,
 .site-info a:hover,
@@ -132,9 +131,6 @@ a:focus,
 }
 #footer-center-items {
 	text-align: left;
-}
-.product_title {
-	text-align: left !important;
 }
 .mod-beta h4,
 #secondary-menu
@@ -189,9 +185,7 @@ a:focus,
 /*-----------------------------------------------
 ## Titles
 -----------------------------------------------*/
-.page-template-page_home .entry-title {
-	display: none;
-}
+.page-template-page_home .entry-title,
 .page-template-default .call-to-action {
 	display: none;
 }
@@ -228,17 +222,17 @@ h2 i.fa {
 .button-primary,
 .button-secondary,
 .ninja-forms-field.btn {
-	margin: 5px 0;
-	padding: 15px 20px;
 	border: none;
 	border-radius: 6px;
+	margin: 5px 0;
+	padding: 15px 20px;	
 	transition: all .5s;
 }
 .form-submit .submit {
+	border: medium none;
+	border-radius: 6px;	
 	margin: 10px 0;
 	padding: 15px 40px;
-	border: medium none;
-	border-radius: 6px;
 	transition: all .5s;
 }
 #commentform p.form-submit {
@@ -283,8 +277,8 @@ hr {
 }
 .site-footer .well,
 .site-header .widget.well.widget_search {
-	border: none;
 	background: transparent;
+	border: none;
 	box-shadow: none;
 }
 
@@ -304,16 +298,21 @@ ol {
 .site-description {
 	margin-bottom: 24px;
 }
+.site-title a,
+.site-title a:hover,
+.site-title a:focus {
+	color: #fff;
+}
 
 /* Call To Action */
 .call-to-action {
-	margin-top: 75px;
 	margin-bottom: 200px;
+	margin-top: 75px;
 }
 .call-to-action h2 {
+	border: none;
 	margin: 0 0 .5em;
 	padding: 0;
-	border: none;
 }
 .call-to-action h3 {
 	padding: 10px;
@@ -330,16 +329,21 @@ ol {
 ## Main Menu
 -----------------------------------------------*/
 .navbar {
-	border: none;
-	/* Border Radius */
-	border-radius: 0;
 	background: none;
+	border: none;
+	border-radius: 0;
 }
 .navbar-default {
 	margin-bottom: 0;
 }
 .navbar-nav > li {
 	min-height: 55px;
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-text,
+.secondary-menu li a,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	color: #fff;
 }
 
 /* Nav hover */
@@ -359,23 +363,19 @@ ol {
 .dropdown-menu {
 	border: none;
 }
-.dropdown-menu:hover {
-	margin-top: -5px;
-}
+.dropdown-menu:hover,
 .navbar-nav > li > .dropdown-menu {
 	margin-top: -5px;
 }
 .navbar-default .navbar-nav > .active > a:hover {
 	color: #fff;
 }
+
 /* Nav toggle */
 .navbar-default .navbar-toggle {
 	border-color: #ddd;
 }
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: #fff;
-}
-
+.navbar-default .navbar-toggle .icon-bar.
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
 	background-color: #fff;
@@ -425,16 +425,16 @@ ol {
 	padding-left: 0;
 }
 .menu-social ul li {
-	position: relative;
 	display: inline-block;
+	position: relative;
 }
 .menu-social li a {
 	display: inline-block;
 	padding: 0 5px;
 }
 #primary-navbar li.menu-social a {
-	padding: 5px 8px;
 	border: none;
+	padding: 5px 8px;
 }
 
 /* md */
@@ -453,8 +453,8 @@ ol {
 -----------------------------------------------*/
 blockquote,
 .mod-blockquote {
-	padding-top: 0;
 	padding-bottom: 0;
+	padding-top: 0;
 }
 blockquote p,
 .mod-blockquote p {
@@ -465,8 +465,8 @@ blockquote p,
 ## Alpha
 -----------------------------------------------*/
 .mod-alpha {
-	margin-right: -15px;
 	margin-left: -15px;
+	margin-right: -15px;
 	padding: 60px 25px;
 }
 
@@ -503,10 +503,12 @@ blockquote p,
 .table-striped > tbody > tr:nth-child(2n+1) {
 	border: none;
 }
+
 /* 404 Page */
 .error404 .call-to-action {
 	display: none;
 }
+
 /* Search Page */
 .search .jumbotron {
 	background: none;
@@ -515,6 +517,7 @@ blockquote p,
 .search .button-primary {
 	margin: 0;
 }
+
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
@@ -529,8 +532,8 @@ blockquote p,
 	padding-right: 15px;
 }
 .panel-footer {
-	padding: 25px;
 	border-top: 1px solid transparent;
+	padding: 25px;
 }
 .panel-default > .panel-heading {
 	border: none;
@@ -549,24 +552,23 @@ blockquote p,
 ## WP Canvas Gallery
 -----------------------------------------------*/
 .gallery-icon {
-	display: inline-block;
-	overflow: hidden;
-	margin: -6px 0;
-	width: 100%;
+	backface-visibility: hidden;
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	vertical-align: middle;
+	display: inline-block;
+	margin: -6px 0;
+	overflow: hidden;
 	transition-duration: .3s;
 	transition-property: transform;
 	transform: translateZ(0px);
-
-	backface-visibility: hidden;
+	vertical-align: middle;
+	width: 100%;
 }
 .gallery-icon:hover,
 .gallery-icon:focus,
 .gallery-icon:active {
 	position: relative;
-	z-index: 1;
 	transform: scale(1.1) rotate(4deg);
+	z-index: 1;
 }
 .wc-gallery .gallery {
 	overflow: visible;
@@ -574,18 +576,10 @@ blockquote p,
 .wc-gallery {
 	margin: 0 -15px;
 }
+
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
-.product_title {
-	margin-bottom: 20px;
-}
-.product_title:before {
-	border-top: none;
-}
-.woocommerce p.buttons a.button:hover {
-	background-image: none;
-}
 .woocommerce div.product .woocommerce-tabs .panel {
 	background: none;
 }
@@ -596,14 +590,14 @@ blockquote p,
 #footer-widget-area {
 	margin-top: 30px;
 }
-
 .footer-6 {
 	margin-top: 1em;
 }
+
 /* Disabled Footer */
 .disabled-footer .site-footer {
-	padding: 15px 0;
 	height: auto;
+	padding: 15px 0;
 }
 .disabled-footer .content-area {
 	margin-bottom: 0;
