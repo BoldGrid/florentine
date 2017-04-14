@@ -281,6 +281,10 @@ hr {
 	border: none;
 	box-shadow: none;
 }
+input,
+select {
+	color: #333;
+}
 
 /* Lists */
 ul,
@@ -580,7 +584,7 @@ blockquote p,
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
-.woocommerce div.product .woocommerce-tabs .panel {
+.panel {
 	background: none;
 	box-shadow: none;
 }
