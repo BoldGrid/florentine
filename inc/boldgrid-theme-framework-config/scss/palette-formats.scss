@@ -78,7 +78,8 @@ $added-contrast: text-contrast( $added );
 	#menu-primary .current-menu-item > a {
 		border-bottom: 5px solid $palette-primary_1;
 	}
-	.widget-area {
+	.widget-area,
+	#reviews #comments ol.commentlist li .comment-text {
 		border: 1px solid $palette-primary_1;
 	}
 
@@ -190,7 +191,8 @@ $added-contrast: text-contrast( $added );
 	h2,
 	.mod-beta h3,
 	.entry-title a,
-	.entry-title a:hover {
+	.entry-title a:hover,
+	#reviews #comments ol.commentlist li .meta {
 		color: $text-contrast-palette-primary_5;
 	}
 	&.page-template-page_home {
