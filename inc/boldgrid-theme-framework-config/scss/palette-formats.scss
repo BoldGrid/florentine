@@ -127,7 +127,8 @@ $added-contrast: text-contrast( $added );
 	#footer-center-menu li.menu-social a {
 		color: $palette-primary_3;
 	}
-	ul.products li.product .price {
+	ul.products li.product .price,
+	.woocommerce-MyAccount-navigation-link a {
 		color: $palette-primary_3 !important;
 	}
 	.fa-inverse {
@@ -142,6 +143,11 @@ $added-contrast: text-contrast( $added );
 	mark {
 		background: $palette-primary_3;
 		color: $text-contrast-palette-primary_3;
+	}
+	.woocommerce-MyAccount-navigation-link a:hover,
+	.woocommerce-MyAccount-navigation-link .color1-background-color {
+		background: $palette-primary_3 !important;
+		color: $text-contrast-palette-primary_3 !important;
 	}
 
 	/*-----------------------------------------------
