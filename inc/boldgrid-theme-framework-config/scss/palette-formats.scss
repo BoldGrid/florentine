@@ -218,3 +218,13 @@ $added-contrast: text-contrast( $added );
 		border-color: $palette-primary_5;
 	}
 }
+
+/*------------------------------------------------------------------------
+# Additional Body Classes
+------------------------------------------------------------------------*/
+.palette-primary.woocommerce .color1-color {
+	color: $palette-primary_3 !important;
+}
+.palette-primary.woocommerce p.price.color2-color {
+	color: $palette-primary_3 !important;
+}
