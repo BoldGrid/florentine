@@ -222,9 +222,12 @@ $added-contrast: text-contrast( $added );
 /*------------------------------------------------------------------------
 # Additional Body Classes
 ------------------------------------------------------------------------*/
-.palette-primary.woocommerce .color1-color {
-	color: $palette-primary_3 !important;
-}
+.palette-primary.woocommerce .color1-color,
+.palette-primary.woocommerce-page .color1-color,
 .palette-primary.woocommerce p.price.color2-color {
 	color: $palette-primary_3 !important;
+}
+.palette-primary.woocommerce-page .color-1-text-contrast-hover:hover, 
+.palette-primary.woocommerce-page .color-1-text-contrast-hover:focus {
+	color: $text-contrast-palette-primary_1 !important;
 }
