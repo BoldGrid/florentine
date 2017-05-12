@@ -36,7 +36,8 @@ $added-contrast: text-contrast( $added );
 		background-color: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-	#tertiary-menu {
+	#tertiary-menu,
+	.navbar-default .navbar-toggle .icon-bar {
 		background: $palette-primary_1;
 	}
 	.navbar-default .navbar-nav > li > a,
@@ -87,6 +88,9 @@ $added-contrast: text-contrast( $added );
 	.widget-area,
 	#reviews #comments ol.commentlist li .comment-text {
 		border: 1px solid $palette-primary_1;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: $palette-primary_1;
 	}
 
 	/*-----------------------------------------------
@@ -182,9 +186,15 @@ $added-contrast: text-contrast( $added );
 	blockquote {
 		border-left: 6px solid $palette-primary_4;
 	}
-	.dropdown-menu {
+	.dropdown-menu,
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
 		background-color: $palette-primary_4;
-	}	
+	}
+	.navbar-default .navbar-toggle:hover .icon-bar,
+	.navbar-default .navbar-toggle:focus .icon-bar {
+		background: $text-contrast-palette-primary_4;
+	}
 
 	/*-----------------------------------------------
 	## 5
