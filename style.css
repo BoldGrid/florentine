@@ -373,7 +373,6 @@ ol {
 /* sm */
 @media (min-width: 768px) {
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-		color: #333;
 		text-align: left;
 	}
 }
