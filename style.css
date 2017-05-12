@@ -302,11 +302,6 @@ ol {
 .site-description {
 	margin-bottom: 24px;
 }
-.site-title a,
-.site-title a:hover,
-.site-title a:focus {
-	color: #fff;
-}
 
 /* Call To Action */
 .call-to-action {
@@ -342,12 +337,6 @@ ol {
 }
 .navbar-nav > li {
 	min-height: 55px;
-}
-.navbar-default .navbar-nav > li > a,
-.navbar-default .navbar-text,
-.secondary-menu li a,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-	color: #fff;
 }
 
 /* Nav hover */

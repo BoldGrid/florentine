@@ -39,6 +39,12 @@ $added-contrast: text-contrast( $added );
 	#tertiary-menu {
 		background: $palette-primary_1;
 	}
+	.navbar-default .navbar-nav > li > a,
+	.navbar-default .navbar-text,
+	.secondary-menu li a,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #fff;
+	}	
 	.tertiary-menu li a,
 	.site-footer .widget.well,
 	.site-footer .widget.well caption,
@@ -127,6 +133,11 @@ $added-contrast: text-contrast( $added );
 	#footer-center-menu li.menu-social a {
 		color: $palette-primary_3;
 	}
+	.site-title a,
+	.site-title a:hover,
+	.site-title a:focus {
+		color: #fff;
+	}	
 	.fa-inverse {
 		color: $text-contrast-palette-primary_3;
 	}
