@@ -363,6 +363,12 @@ ol {
 .navbar-default .navbar-nav > .active > a:hover {
 	color: #fff;
 }
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+	background: none;
+	border: none; 
+}
 
 /* Nav toggle */
 .navbar-default .navbar-toggle {
