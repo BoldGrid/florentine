@@ -22,10 +22,6 @@ $added-contrast: text-contrast( $added );
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-	.navbar-default .navbar-nav > .open > a,
-	.navbar-default .navbar-nav > .open > a:hover,
-	.navbar-default .navbar-nav > .open > a:focus,
-	.navbar-default .navbar-nav > .current-menu-parent > a,
 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
@@ -84,8 +80,16 @@ $added-contrast: text-contrast( $added );
 	.navbar-default .navbar-nav > li > a:hover,
 	.navbar-default .navbar-nav > li > a:focus,
 	.mod-alpha h2,
-	#menu-primary .current-menu-item > a {
+	#menu-primary .current-menu-item > a,
+	.navbar-default .navbar-nav > .current-menu-parent > a {
 		border-bottom: 5px solid $palette-primary_1;
+	}
+	.navbar-default .navbar-nav > .open > a,
+	.navbar-default .navbar-nav > .open > a:hover,
+	.navbar-default .navbar-nav > .open > a:focus {
+		background: none;
+		border-bottom: 5px solid $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
 	}
 	.widget-area,
 	#reviews #comments ol.commentlist li .comment-text {
