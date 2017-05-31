@@ -561,26 +561,6 @@ blockquote p,
 	margin: 0 -15px;
 }
 
-/* Gallery Captions */
-.page-template-default .gallery-icon {
-	box-shadow: none;
-	margin: 0;
-	width: 100%;
-}
-.page-template-default .gallery-icon:hover,
-.page-template-default .gallery-icon:focus,
-.page-template-default .gallery-icon:active {
-	position: relative;
-	transform: none;
-}
-.page-template-default .wc-image-links .gallery-caption, 
-.page-template-default .wc-gallery-captions-onpopup .gallery-caption, 
-.page-template-default .wc-gallery-captions-showon .gallery-caption, 
-.page-template-default .wc-gallery-captions-onhover .gallery-caption {
-    z-index: 1;
-}
-
-
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
