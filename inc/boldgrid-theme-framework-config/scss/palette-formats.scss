@@ -120,7 +120,8 @@ $added-contrast: text-contrast( $added );
 	}
 	.site-title a,
 	.site-title a:hover,
-	.site-title a:focus {
+	.site-title a:focus,
+	.site-description {
 		color: #fff;
 	}	
 	.fa-inverse {
