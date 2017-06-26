@@ -4,16 +4,16 @@
 $rgba_5 : rgba($palette-primary_5, 0.75);
 $added: darken( desaturate( $palette-primary_4, 20% ), 7%);
 $added-contrast: text-contrast( $added );
+
 /*------------------------------------------------------------------------
 # Palettes
 ------------------------------------------------------------------------*/
 .palette-primary {
+
 	/*-----------------------------------------------
 	## 1
 	-----------------------------------------------*/
 	.button-primary,
-	.form-submit .submit,
-	.ninja-forms-field.btn,
 	.call-to-action h3,
 	.table-striped > tbody > tr:nth-child(2n+1),
 	.site-footer {
@@ -45,22 +45,11 @@ $added-contrast: text-contrast( $added );
 	.tertiary-menu li a,
 	.site-footer .widget.well,
 	.site-footer .widget.well caption,
-	.site-header .widget.well caption	
+	.site-header .widget.well caption,
 	.site-header,
-	.button-primary,
-	.button-secondary,
-	.ninja-forms-field.btn,
-	.site-info,
-	.site-info a,
-	.site-info a:hover,
-	.site-info a:focus,
 	.site-footer a,
 	.site-footer a:hover,
 	.site-footer a:focus,
-	.attribution,
-	.attribution a,
-	.attribution a:hover,
-	.attribution a:focus,
 	.follow-me h2 {
 		color: $text-contrast-palette-primary_1;
 	}
@@ -89,7 +78,6 @@ $added-contrast: text-contrast( $added );
 		border-bottom: 5px solid $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-	.widget-area,
 	#reviews #comments ol.commentlist li .comment-text {
 		border: 1px solid $palette-primary_1;
 	}
@@ -104,17 +92,9 @@ $added-contrast: text-contrast( $added );
 	.button-primary:focus,
 	.button-secondary:hover,
 	.button-secondary:focus,
-	.ninja-forms-field.btn:hover,
-	.ninja-forms-field.btn:focus,
 	.pager li > a:hover,
 	.pager li > a:focus {
 		background: $palette-primary_2;
-		color: $text-contrast-palette-primary_2;
-	}
-	.form-submit .submit:hover,
-	.form-submit .submit:focus {
-		background-color: $palette-primary_2;
-		border-color: $palette-primary_2;
 		color: $text-contrast-palette-primary_2;
 	}
 	#primary-navbar li.menu-social a i:hover,
@@ -131,9 +111,6 @@ $added-contrast: text-contrast( $added );
 	a,
 	a:hover,
 	a:focus,
-	.link-primary,
-	.link-primary:hover,
-	.link-primary:focus,
 	#primary-navbar li.menu-social a,
 	.menu-social li a i.fa-circle,
 	#secondary-menu li.menu-social a,
@@ -252,7 +229,7 @@ $added-contrast: text-contrast( $added );
 .palette-primary.single-product .color2-color {
 	color: $palette-primary_3 !important;
 }
-.palette-primary.woocommerce-page .color-1-text-contrast-hover:hover, 
+.palette-primary.woocommerce-page .color-1-text-contrast-hover:hover,
 .palette-primary.woocommerce-page .color-1-text-contrast-hover:focus {
 	color: $text-contrast-palette-primary_1 !important;
 }
