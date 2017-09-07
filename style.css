@@ -164,12 +164,6 @@ h3 {
 h4 {
 	padding-bottom: 15px;
 }
-.hentry {
-	margin: 0 auto;
-}
-.hentry:first-child ~ .hentry {
-	margin-top: 50px;
-}
 .heading {
 	margin-bottom: 15px;
 }
@@ -432,6 +426,9 @@ blockquote p,
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
+.post {
+	margin: 0 auto 50px;
+}
 /* Comments */
 .panel-footer {
 	border-top: 1px solid transparent;
