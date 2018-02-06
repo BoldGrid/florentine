@@ -6,7 +6,7 @@
 - License: GNU General Public License v2 or later
 - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-BoldGrid Theme best suited for Music, Design, Photography, Fitness, and Property Management.
+BoldGrid Theme best suited for Music, Design, Photography, and Fitness.
 
 ## Information & Changelog
 [BoldGrid.com - Florentine](https://www.boldgrid.com/themes/florentine/)
